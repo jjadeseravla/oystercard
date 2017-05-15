@@ -6,7 +6,7 @@ class Oystercard
   DEFAULT_BALANCE = 0
   MAX_BALANCE = 90
 
-  def initialize(balance=DEFAULT_BALANCE)
+  def initialize(balance = DEFAULT_BALANCE)
     @balance = balance
     @in_journey = false
   end
