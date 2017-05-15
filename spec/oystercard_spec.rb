@@ -46,6 +46,13 @@ describe Oystercard do
       subject.touch_out
       expect(subject).not_to be_in_journey
     end
+
+    it 'should be able to update balance with reduced balance' do
+      top_up_amount = 10
+      minimum_fare = Oystercard::MIN_FARE
+      card = Oystercard.new(top_up_amount)
+      expect{ card.deduct(minimum_fare) }.to change{ card.balance }.by (-minimum_fare)
+    end
   end
 
 end
