@@ -15,4 +15,6 @@ class Oystercard
     @balance += top_up_amount
   end
 
+  def deduct(debit_amount); end
+
 end

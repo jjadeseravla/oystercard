@@ -16,7 +16,12 @@ describe Oystercard do
     it "should raise an error when top_up_amount would cause card's balance to exceed maximum balance" do
       expect { subject.top_up(Oystercard::MAX_BALANCE + 1) }.to raise_error(BalanceError)
     end
+  end
 
+  describe '#deduct' do
+    it 'should be able to deduct from the balance' do
+      expect(subject).to respond_to(:deduct).with(1).argument
+    end
   end
 
 end
