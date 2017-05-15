@@ -60,5 +60,11 @@ describe Oystercard do
       card = Oystercard.new(top_up_amount)
       expect{ card.deduct(minimum_fare) }.to change{ card.balance }.by (-minimum_fare)
     end
+
+    it 'should erase record of touched in station' do
+      subject.instance_variable_set("@entry_station", :station)
+      subject.touch_out
+      expect(subject.entry_station).to eq nil
+    end
   end
 end
