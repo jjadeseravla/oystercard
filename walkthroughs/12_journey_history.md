@@ -49,4 +49,4 @@ Once you make this test pass, consider refactoring to add a new context for comp
 
 Once your tests are green look at refactoring - do we still need the `@entry_station` and `@exit_station` variables?
 
-[Next challenge](../13_create_station_class.md)
+[Next challenge](../README%20Files/13_create_station_class.md)

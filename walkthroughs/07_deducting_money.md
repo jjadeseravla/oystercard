@@ -45,4 +45,4 @@ end
 
 Now we should have a green test - it is very important that you high-five your pair partner. As always, now is the time to reflect upon your code, and decide if there is anything you would like to refactor. One thing would be to check those respond_to tests - are they still relevant or are they now duplicated? If they are duplicated elsewhere, remove them to keep your code clean and concise.
 
-[Next challenge](../08_touch_in_out.md)
+[Next challenge](../README%20Files/08_touch_in_out.md)

@@ -40,4 +40,4 @@ I need to have the minimum amount (£1) for a single journey.
 - [Ruby constants](http://rubylearning.com/satishtalim/ruby_constants.html)
 - [If statements](http://www.dev-hq.net/ruby/5--if-statements)
 
-## [Walkthrough](walkthroughs/09_min_balance_on_touch_in.md)
+## [Walkthrough](../walkthroughs/09_min_balance_on_touch_in.md)

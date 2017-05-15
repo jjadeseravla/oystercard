@@ -25,4 +25,4 @@ Let's extract a JourneyLog class. It should be responsible for starting a journe
 ## Suggested resources: 
 - [Ruby](http://www.getlaura.com/dependency-inversion-principle-in-ruby/)
 
-## [Walkthrough](walkthroughs/15_extracting_journey_log.md)
+## [Walkthrough](../walkthroughs/15_extracting_journey_log.md)

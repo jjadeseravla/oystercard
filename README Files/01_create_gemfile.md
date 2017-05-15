@@ -31,4 +31,4 @@ In this issue you will create a valid Gemfile for this project.
 - [Gemfile documentation on bundler.io](http://bundler.io/gemfile.html)
 - [What is a Gemfile](http://tosbourn.com/what-is-the-gemfile/)
 
-## [Walkthrough](walkthroughs/01_create_gemfile.md)
+## [Walkthrough](../walkthroughs/01_create_gemfile.md)

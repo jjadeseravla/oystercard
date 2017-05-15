@@ -108,4 +108,4 @@ I need to have the correct fare calculated
 ## Make fares depends on zones
   16. [Calculating the fare between zones](16_fare_for_zones.md)
 
-## [Example Code](walkthroughs/example_code)
+## [Example Code](../walkthroughs/example_code)

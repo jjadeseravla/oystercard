@@ -40,4 +40,4 @@ I need to touch in and out.
 - [Predicate methods](http://pragmati.st/2012/03/24/the-elements-of-ruby-style-predicate-methods/)
 - [RSpec predicate matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-3/docs/built-in-matchers/predicate-matchers)
 
-## [Walkthrough](walkthroughs/08_touch_in_out.md)
+## [Walkthrough](../walkthroughs/08_touch_in_out.md)

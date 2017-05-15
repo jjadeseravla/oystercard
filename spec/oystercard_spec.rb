@@ -1,4 +1,4 @@
-require 'oystercard'
+require_relative '../lib/oystercard'
 
 describe Oystercard do
 
@@ -20,9 +20,9 @@ describe Oystercard do
     card = Oystercard.new(20)
     entry_station = double(:station)
     exit_station = double(:station)
-    card.touch_in(entry_station)
-    card.touch_out(exit_station)
-    expect(card.list_of_journeys[0]).to eq({entry_station: entry_station, exit_station: exit_station})
+    card.touch_in_at(entry_station)
+    card.touch_out_at(exit_station)
+    expect(card.list_of_journeys[0]).to eq({ entry_station: entry_station, exit_station: exit_station })
   end
 
   describe '#top_up' do
@@ -41,43 +41,43 @@ describe Oystercard do
     end
   end
 
-  describe '#touch_in' do
+  describe '#touch_in_at' do
     it 'should be able to touch in at barrier' do
-      card = Oystercard.new(2)
+      card = Oystercard.new(20)
       station = :station
-      card.touch_in(station)
+      card.touch_in_at(station)
       expect(card.entry_station).to eq station
     end
 
     it 'should raise an error if balance is below minimum balance' do
       card = Oystercard.new
-      expect { card.touch_in double(:station) }.to raise_error(BalanceError)
+      expect { card.touch_in_at double(:station) }.to raise_error(BalanceError)
     end
   end
 
   it 'should be able to remember entry station after touch in' do
     card = Oystercard.new(10)
     station = double(:station)
-    card.touch_in(station)
+    card.touch_in_at(station)
     expect(card.entry_station).to eq station
   end
 
-  describe '#touch_out' do
+  describe '#touch_out_at' do
     it 'should be able to touch out at barrier' do
-      subject.touch_out
-      expect(subject.entry_station).to eq nil
+      expect(subject).to respond_to(:touch_out_at).with(1).argument
     end
 
     it 'should be able to update balance with reduced balance' do
       top_up_amount = 10
       minimum_fare = Oystercard::MIN_FARE
       card = Oystercard.new(top_up_amount)
-      expect{ card.deduct(minimum_fare) }.to change{ card.balance }.by(-minimum_fare)
+      expect { card.deduct(minimum_fare) }.to change { card.balance }.by(-minimum_fare)
     end
 
     it 'should erase record of touched in station' do
-      subject.instance_variable_set("@entry_station", :station)
-      subject.touch_out
+      subject.instance_variable_set('@entry_station', :station1)
+      subject.instance_variable_set('@list_of_journeys', [{ entry_station: :station1 }])
+      subject.touch_out_at(:station2)
       expect(subject.entry_station).to eq nil
     end
   end

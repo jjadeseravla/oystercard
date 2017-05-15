@@ -38,4 +38,4 @@ I need to know where I've travelled from
 - [Ruby instance variables](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/110-instance-variables)
 - [RSpec predicate matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-3/docs/built-in-matchers/predicate-matchers)
 
-## [Walkthrough](walkthroughs/11_saving_entry_station.md)
+## [Walkthrough](../walkthroughs/11_saving_entry_station.md)

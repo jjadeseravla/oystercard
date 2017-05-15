@@ -55,4 +55,4 @@ end
 
 Write code to make this test pass, and then look at ways to refactor.
 
-[Next challenge](../09_min_balance_on_touch_in.md)
+[Next challenge](../README%20Files/09_min_balance_on_touch_in.md)

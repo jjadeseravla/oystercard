@@ -32,4 +32,4 @@ When my journey is complete, I need the correct amount deducted from my card
 - [expect vs expect with a block on SO](http://stackoverflow.com/questions/19960831/rspec-expect-vs-expect-with-block-whats-the-difference)
 - [DRY: Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-## [Walkthrough](walkthroughs/10_charge_on_touch_out.md)
+## [Walkthrough](../walkthroughs/10_charge_on_touch_out.md)

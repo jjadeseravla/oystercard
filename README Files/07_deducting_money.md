@@ -26,4 +26,4 @@ I need my fare deducted from my card
 - [RubyMonk](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/110-instance-variables)
 - [4 phase testing](https://robots.thoughtbot.com/four-phase-test)
 
-## [Walkthrough](walkthroughs/07_deducting_money.md)
+## [Walkthrough](../walkthroughs/07_deducting_money.md)

@@ -60,4 +60,4 @@ describe Journey do
 end
 ```
 
-[Next challenge](../15_extracting_journey_log.md)
+[Next challenge](../README%20Files/15_extracting_journey_log.md)

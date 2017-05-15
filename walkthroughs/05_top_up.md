@@ -80,4 +80,4 @@ end
 
 Your test should now be green - can you think of a way to refactor? (hint: there is a shortcut in ruby `+=` that may make this a little bit more concise.)
 
-[Next challenge](../06_maximum_balance.md)
+[Next challenge](../README%20Files/06_maximum_balance.md)

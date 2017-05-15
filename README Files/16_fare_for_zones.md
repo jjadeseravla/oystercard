@@ -41,4 +41,4 @@ I need to have the correct fare calculated
 - [Ruby's Numeric class](http://ruby-doc.org/core-2.2.0/Numeric.html)
 - [Parallel assignment on SO](http://stackoverflow.com/questions/2895957/parallel-assignment-operator-in-ruby)
 
-## [Walkthrough](walkthroughs/16_fare_for_zones.md)
+## [Walkthrough](../walkthroughs/16_fare_for_zones.md)

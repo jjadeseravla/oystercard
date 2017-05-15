@@ -44,4 +44,4 @@ I want to see to all my previous trips
 - [RSpec before and after hooks](https://www.relishapp.com/rspec/rspec-core/v/2-0/docs/hooks/before-and-after-hooks)
 - [DRY: Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-## [Walkthrough](walkthroughs/12_journey_history.md)
+## [Walkthrough](../walkthroughs/12_journey_history.md)

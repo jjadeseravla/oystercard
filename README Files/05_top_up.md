@@ -34,4 +34,4 @@ I want to add money to my card
 - [TDD on Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 - [RubyMonk](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/110-instance-variables)
 
-## [Walkthrough](walkthroughs/05_top_up.md)
+## [Walkthrough](../walkthroughs/05_top_up.md)
