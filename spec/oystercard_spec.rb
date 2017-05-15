@@ -17,7 +17,7 @@ describe Oystercard do
   end
 
   it 'should add a complete journey to the list of journeys if a card touches in AND out' do
-    card = Oystercard.new
+    card = Oystercard.new(20)
     entry_station = double(:station)
     exit_station = double(:station)
     card.touch_in(entry_station)

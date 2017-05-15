@@ -1,7 +1,7 @@
 require_relative './custom_errors'
 
 class Oystercard
-  attr_reader :balance, :in_journey, :entry_station
+  attr_reader :balance, :in_journey, :entry_station, :list_of_journeys
 
   DEFAULT_BALANCE = 0
   MAX_BALANCE = 90
@@ -9,6 +9,7 @@ class Oystercard
   MIN_FARE = 4
 
   def initialize(balance = DEFAULT_BALANCE)
+    @list_of_journeys = []
     @balance = balance
     @entry_station = nil
   end
@@ -22,12 +23,12 @@ class Oystercard
     @balance -= debit_amount
   end
 
-  def touch_in(at_station)
+  def touch_in(entry_station)
     raise(BalanceError, 'balance is too low') if @balance < MIN_BALANCE
-    @entry_station = at_station
+    @entry_station = entry_station
   end
 
-  def touch_out
+  def touch_out(exit_station)
     @balance -= MIN_FARE
     @entry_station = nil
   end
