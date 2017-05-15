@@ -30,8 +30,14 @@ describe Oystercard do
 
   describe '#touch_in' do
     it "should be able to touch in at barrier" do
-      subject.touch_in
-      expect(subject).to be_in_journey
+      card = Oystercard.new(2)
+      card.touch_in
+      expect(card).to be_in_journey
+    end
+
+    it 'should raise an error if balance is below minimum balance' do
+      card = Oystercard.new
+      expect { card.touch_in }.to raise_error(BalanceError)
     end
   end
 
