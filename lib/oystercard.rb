@@ -10,7 +10,6 @@ class Oystercard
 
   def initialize(balance = DEFAULT_BALANCE)
     @balance = balance
-    @in_journey = false
     @entry_station = nil
   end
 
@@ -25,18 +24,12 @@ class Oystercard
 
   def touch_in(at_station)
     raise(BalanceError, 'balance is too low') if @balance < MIN_BALANCE
-    @in_journey = true
     @entry_station = at_station
   end
 
   def touch_out
     @balance -= MIN_FARE
-    @in_journey = false
     @entry_station = nil
-  end
-
-  def in_journey?
-    @in_journey
   end
 
 end
