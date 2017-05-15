@@ -28,5 +28,18 @@ describe Oystercard do
     end
   end
 
-end
+  describe '#touch_in' do
+    it "should be able to touch in at barrier" do
+      subject.touch_in
+      expect(subject).to be_in_journey
+    end
+  end
 
+  describe '#touch_out' do
+    it "should be able to touch out at barrier" do
+      subject.touch_out
+      expect(subject).not_to be_in_journey
+    end
+  end
+
+end
