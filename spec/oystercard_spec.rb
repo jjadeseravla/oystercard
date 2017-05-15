@@ -31,14 +31,21 @@ describe Oystercard do
   describe '#touch_in' do
     it "should be able to touch in at barrier" do
       card = Oystercard.new(2)
-      card.touch_in
+      card.touch_in double(:station)
       expect(card).to be_in_journey
     end
 
     it 'should raise an error if balance is below minimum balance' do
       card = Oystercard.new
-      expect { card.touch_in }.to raise_error(BalanceError)
+      expect { card.touch_in double(:station) }.to raise_error(BalanceError)
     end
+  end
+
+  it "should be able to remember entry station after touch in" do
+    card = Oystercard.new(10)
+    station = double(:station)
+    card.touch_in(station)
+    expect(card.entry_station).to eq station
   end
 
   describe '#touch_out' do
@@ -54,5 +61,4 @@ describe Oystercard do
       expect{ card.deduct(minimum_fare) }.to change{ card.balance }.by (-minimum_fare)
     end
   end
-
 end
