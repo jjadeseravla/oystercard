@@ -1,0 +1,1 @@
+class Oystercard; end
