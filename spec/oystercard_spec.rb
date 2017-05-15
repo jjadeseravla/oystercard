@@ -19,8 +19,12 @@ describe Oystercard do
   end
 
   describe '#deduct' do
-    it 'should be able to deduct from the balance' do
-      expect(subject).to respond_to(:deduct).with(1).argument
+    it 'should be able to deduct an amount from card balance' do
+      top_up_amount = 10
+      debit_amount = 5
+      card = Oystercard.new(top_up_amount)
+      card.deduct(debit_amount)
+      expect(card.balance).to eq (top_up_amount - debit_amount)
     end
   end
 
